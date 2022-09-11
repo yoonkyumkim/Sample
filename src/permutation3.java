@@ -37,4 +37,18 @@ public class permutation3 {
          arr.add(i, result.remove(result.size() - 1));
       }
    }
+
+
+   private static void rec(List<String> arr, List<String> result, int n, int r) {
+      if (r == 0) {
+         System.out.println(result);
+         return;
+      }
+
+      for (int i = 0; i < n; i++) {
+         result.add(arr.remove(i));
+         rec(arr, result, n - 1, r - 1);
+         arr.add(i, result.remove(result.size() - 1));
+      }
+   }
 }
