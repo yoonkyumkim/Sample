@@ -1,7 +1,7 @@
 public class 카팻 {
 
     public int[] solution(int brown, int yellow) {
-        int[] answer = {};
+        int[] answer = {0 ,0};
 
 
         int sum = brown + yellow;
