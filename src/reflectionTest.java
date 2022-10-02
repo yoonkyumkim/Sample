@@ -1,3 +1,5 @@
+import java.lang.reflect.Method;
+
 public class reflectionTest {
 
     public static void main(String[] args) throws Exception
@@ -5,11 +7,6 @@ public class reflectionTest {
         doRegular();
         doReflection();
         doReflection2();
-        long start = System.currentTimeMillis();
-        for (int i=0; i<10000; i++) {
-            doReflection3();
-        }
-        System.out.println(System.currentTimeMillis() - start);
     }
 
     public static void doRegular() throws Exception
@@ -34,21 +31,32 @@ public class reflectionTest {
         System.out.println(System.currentTimeMillis() - start);
     }
 
+//    public static void doReflection2() throws Exception
+//    {
+//        long start = System.currentTimeMillis();
+//        A a = (A) Class.forName("reflectionTest$A").newInstance();
+//        for (int i=0; i<10000; i++)
+//        {
+//            a.doSomeThing();
+//        }
+//        System.out.println(System.currentTimeMillis() - start);
+//    }
     public static void doReflection2() throws Exception
     {
         long start = System.currentTimeMillis();
-        A a = (A) Class.forName("reflectionTest$A").newInstance();
+        Class klass = Class.forName("reflectionTest$A");
+        Method getName = Class.forName("reflectionTest$A").getMethod("doSomeThing");
         for (int i=0; i<10000; i++)
         {
-            a.doSomeThing();
+            getName.invoke(new A());
         }
         System.out.println(System.currentTimeMillis() - start);
     }
-    public static void doReflection3() throws Exception
-    {
-        A a = (A) Class.forName("reflectionTest$A").newInstance();
-        a.doSomeThing();
-    }
+//    public static void doReflection3() throws Exception
+//    {
+//        A a = (A) Class.forName("reflectionTest$A").newInstance();
+//        a.doSomeThing();
+//    }
 
     public static class A {
         public void doSomeThing() {
