@@ -8,9 +8,10 @@ public class permutation3 {
       arr.add("a");
       arr.add("b");
       arr.add("c");
+      arr.add("d");
 
       List<String> result = new ArrayList<>();
-      reculsion(arr, result, arr.size(), 2);
+      reculsion(arr, result, arr.size(), 3);
 
    }
 
