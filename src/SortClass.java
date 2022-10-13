@@ -19,12 +19,7 @@ public class SortClass {
         set.add(new Person(3, 3));
         set.add(new Person(4, 4));
         set.add(new Person(2, 2));
-        set.remove(new Person(1, 1));
         set.add(new Person(1, 3));
-//        list.add(new Person(1, 1));
-//        list.add(new Person(3, 3));
-//        list.add(new Person(4, 4));
-//        list.add(new Person(2, 2));
 
 
         for(Person p : set) {
@@ -32,7 +27,6 @@ public class SortClass {
             System.out.println("score : " + p.score);
         }
     }
-
 
     public class Person implements Comparable<Person>{
         int uidx;
