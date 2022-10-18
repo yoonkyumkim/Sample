@@ -23,3 +23,8 @@ https://youtu.be/Gimv7hroM8A
 
 -java collection에 대한 시간복잡도 비교도
 https://www.grepiu.com/post/9
+
+-arrayList, linkedlist 정리
+-arrayList 크기는 사용 가능한 메모리가 허용하는만큼 힙을 제외하고는 크기 제한이 없다.
+대신 너무 크면 linkedlist 사용을 고려하거나 크기를 미리 조정하는것이 좋음
+https://developerbee.tistory.com/m/147
