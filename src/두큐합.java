@@ -11,20 +11,26 @@ public class 두큐합 {
         Queue<Integer> q1 = new LinkedList<>();
         Queue<Integer> q2 = new LinkedList<>();
 
+        //첫번째 큐 합을 구함
         for (int i = 0; i < queue1.length; i++) {
             q1.add(queue1[i]);
             sum1 += queue1[i];
         }
+
+        //두번째 큐 합을 구함
         for (int i = 0; i < queue2.length; i++) {
             q2.add(queue2[i]);
             sum2 += queue2[i];
         }
+
+        //두큐의 합을 구함
         totalSum = sum1 + sum2;
 
         int tmp;
         while (true) {
             if (count > 600000)
                 return -1;
+            //두큐의 합 나누기 2를 해서 값이 같으면 두큐합이 성립
             if (sum1 == totalSum/2) {
                 System.out.println(count);
                 return count;
