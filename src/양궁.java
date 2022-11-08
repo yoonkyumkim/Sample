@@ -22,6 +22,7 @@ public class 양궁 {
     }
 
 
+    //실제 과녁에 화살을 맞추는 로직
     public static void dfs (int idx, int[] lion, int[] app, int arrows) {
         if (idx > 10 || arrows == 0) {
             app[10] += arrows;
@@ -37,6 +38,8 @@ public class 양궁 {
         }
         dfs (idx + 1, lion, app ,arrows);
     }
+
+    //점수 계산 및 최대 점수값 검증
     public static void calc(int[] lion, int[] app) {
         int l = 0;
         int a = 0;
@@ -57,6 +60,7 @@ public class 양궁 {
         }
     }
 
+    //최대 점수값인지 검사 (제일 높은 점수만 비교하면 된다)
     static boolean isBetter(int[] app) {
         for(int i=10; i>=0; i--) {
             if(app[i] > answer[i]) return true;
@@ -68,7 +72,7 @@ public class 양궁 {
     public static void main(String[] args) {
         양궁 y = new 양궁();
         //int[] info = {2,1,1,1,0,0,0,0,0,0,0};
-        int[] info = {0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 3};
-        y.solution(10 , info);
+        int[] info = {0, 0, 1, 2, 0, 1, 1, 1, 1, 1, 1};
+        y.solution(9 , info);
     }
 }
