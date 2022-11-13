@@ -16,7 +16,6 @@ public class k진수소수 {
             return 0;
 
         String changeNum = Integer.toString(n, k);
-
         String[] splitNum = changeNum.split("0");
 
         for (int i = 0; i < splitNum.length; i++) {
