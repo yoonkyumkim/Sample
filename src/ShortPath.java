@@ -3,7 +3,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class ShortPath {
-
     static final int MAX_N = 10;
     static int[][] D = {{-1,0},{1,0},{0,-1},{0,1}};
     static int N;
