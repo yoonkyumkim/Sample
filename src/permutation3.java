@@ -24,7 +24,6 @@ public class permutation3 {
     * @param r      : 뽑을 갯수
     */
    private static void reculsion(List<String> arr, List<String> result, int n, int r) {
-
       if (r == 0) {
          System.out.println(result.toString());
          return;
