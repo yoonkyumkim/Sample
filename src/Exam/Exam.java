@@ -18,7 +18,6 @@ public class Exam {
         }
     }
 
-
     public static void dfsStack(int n) {
         Stack<Integer> myStack = new Stack<>();
         myStack.push(n);
