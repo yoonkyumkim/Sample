@@ -9,8 +9,6 @@ public class 콜라 {
             answer += n;
             n += temp;
         }
-
-        System.out.println(answer);
         return answer;
     }
 
