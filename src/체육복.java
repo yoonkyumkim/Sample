@@ -16,7 +16,6 @@ public class 체육복 {
         for(int num : lost) {
             lostList.add(num);
         }
-
         Collections.sort(reserveList);
         Collections.sort(lostList);
 
