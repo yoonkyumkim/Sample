@@ -3,7 +3,6 @@ public class 카팻 {
     public int[] solution(int brown, int yellow) {
         int[] answer = {0 ,0};
 
-
         int sum = brown + yellow;
         int y = 0;
         int center;
@@ -19,7 +18,6 @@ public class 카팻 {
                 answer[1] = y;
             }
         }
-
 
         return answer;
     }
