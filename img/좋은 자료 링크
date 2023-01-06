@@ -28,3 +28,9 @@ https://www.grepiu.com/post/9
 -arrayList 크기는 사용 가능한 메모리가 허용하는만큼 힙을 제외하고는 크기 제한이 없다.
 대신 너무 크면 linkedlist 사용을 고려하거나 크기를 미리 조정하는것이 좋음
 https://developerbee.tistory.com/m/147
+
+-jvm gc가 발생하는 시점
+https://tweety1121.tistory.com/entry/JAVA-GC%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%8B%9C%EA%B8%B0Garbage-Collector
+
+-mysql lock에 대해
+https://www.letmecompile.com/mysql-innodb-lock-deadlock/
