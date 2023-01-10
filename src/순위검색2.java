@@ -12,7 +12,7 @@ public class 순위검색2 {
         for (int i = 0; i < info.length; i++) {
             String[] p = info[i].split(" ");
 
-            makeSentense(p, "", 0);
+            makeSentence(p, "", 0);
         }
 
         for (String key : map.keySet())
@@ -27,7 +27,7 @@ public class 순위검색2 {
         return answer;
     }
 
-    public static void makeSentense(String[] p, String str, int cnt) {
+    public static void makeSentence(String[] p, String str, int cnt) {
         if (cnt == 4) {
             if (!map.containsKey(str)) {
                 List<Integer> list = new ArrayList<>();
@@ -36,8 +36,8 @@ public class 순위검색2 {
             map.get(str).add(Integer.parseInt(p[4]));
             return;
         }
-        makeSentense(p, str + "-", cnt + 1);
-        makeSentense(p, str + p[cnt], cnt + 1);
+        makeSentence(p, str + "-", cnt + 1);
+        makeSentence(p, str + p[cnt], cnt + 1);
     }
 
     public static int binarySearch(String key, int score) {
