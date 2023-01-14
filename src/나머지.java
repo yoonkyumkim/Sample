@@ -5,7 +5,6 @@ public class 나머지 {
         for (int i = 3; i < n; i++) {
             if (n % i == 1)
                 max = Math.min(max,i);
-
         }
 
         return max;
