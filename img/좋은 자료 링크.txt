@@ -48,3 +48,6 @@ https://adjh54.tistory.com/44
 
 -qa 전략에 대해
 https://engineering.linecorp.com/ko/blog/server-side-test-automation-4/
+
+-nodejs 라이브러리들
+https://novemberde.github.io/post/2017/11/05/Node.JS_Library/
