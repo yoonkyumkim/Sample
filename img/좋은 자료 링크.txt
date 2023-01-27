@@ -54,3 +54,6 @@ https://novemberde.github.io/post/2017/11/05/Node.JS_Library/
 
 -node 기본 강좌
 https://youtu.be/toLDNN4FQv0
+
+-제고 소진 로직 구현 모음
+https://thalals.tistory.com/370
